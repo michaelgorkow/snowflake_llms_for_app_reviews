@@ -45,7 +45,7 @@ CREATE GIT REPOSITORY GITHUB_REPO_SIMPLE_APP_REVIEWS
 -- Fetch most recent files from Github repository
 ALTER GIT REPOSITORY GITHUB_REPO_SIMPLE_APP_REVIEWS FETCH;
 -- Create all demo notebooks
-EXECUTE IMMEDIATE FROM @KAGGLE_TITANIC_CHALLENGE.PUBLIC.TITANIC_CHALLENGE_REPO/branches/main/setup/notebooks_setup.sql;
+EXECUTE IMMEDIATE FROM @APP_REVIEWS.PUBLIC.GITHUB_REPO_SIMPLE_APP_REVIEWS/branches/main/setup/notebooks_setup.sql;
 ```
 
 ## Snowflake Features in this demo
